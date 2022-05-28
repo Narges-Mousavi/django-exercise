@@ -15,7 +15,7 @@ def index(req):
 
 
 def detail(req, pk):
-    tests = Test.objects.get(pk=pk)
+    tests = Test.objects.get(slug=pk)
     # print(tests)
     context ={
         'tests':tests
